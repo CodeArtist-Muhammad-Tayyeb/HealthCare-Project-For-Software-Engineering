@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthcare System</title>
+    <link rel="icon" type="image/png" href="./asset/favicon.png">
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
@@ -20,35 +21,106 @@
         <ul class="nav-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Doctors</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctor">Doctors</a></li>
           <!-- <li class="list_btn"><a href="#">Contact</a></li> -->
-        
+
           <!-- <select class="select-dropdown" >
             <option value="">Join as a Doctor</option>
             <option value="">Join as a Patient</option>
           </select> -->
         </ul>
-        <button class="list_btn">Contact</button>
+        <button class="list_btn button-style">Contact</button>
       </nav>
     </header>
-    
+
     <main>
+      <!----------------------------------- First Section --------------------------------------------->
       <section class="hero">
-        <div class="background-container">
-          <img src="./asset/slider-bg-1.jpg" alt="Healthcare Image 1" class="background-image" />
-        </div>
-       
-        <div class="hero-content">
+        <!-- Left-Hero -->
+        <div class="hero-leftside">
           <h4>Total Health care solution</h4>
-          <h1 class="heading01">Your most trusted <span>health</span> partner</h1>
+          <h1 class="hero-head1">Your <span>health,</span> always supported</h1>
           <p>
-            Effortlessly book appointments with our highly skilled doctors for
+            Schedule your appointment with our skilled doctors in no time for
             better health.
           </p>
-          <a href="./appointment.html" class="cta-btn">Book Appointment</a>
+          <a href="./appointment.html" class="button-style hero-btn"
+            >Book Appointment</a
+          >
+        </div>
+        <!-- Image -->
+        <div class="hero-image">
+          <img src="./asset/backimagefinal-removebg.png" />
         </div>
       </section>
+
+      <!----------------------------------- Second Section --------------------------------------------->
+      <section class="card-container" id="doctor">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="./asset/male-doctor-96.png" alt="" class="card-image" />
+          <h5 class="card-head5">24 Hours Service</h5>
+          <h3 class="card-head3">Online Appoinment</h3>
+          <div class="card-details">
+            <p>
+              Our 24-hour service provides round-the-clock assistance, while our
+              online appointment system lets you easily book appointments
+              anytime, from anywhere.
+            </p>
+            <a href="./appointment.html" class="card-btn button-style"
+              >Make a Appointment</a
+            >
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="./asset/icons8-clock-90.png" alt="" class="card-image" />
+          <h5 class="card-head5">Timing schedule</h5>
+          <h3 class="card-head3">Working Hours</h3>
+          <div class="card-details">
+            <ul class="card2_list">
+              <li>Sun - Wed : <span>8:00 - 17:00</span></li>
+              <li>Thu - Fri : <span>9:00 - 17:00</span></li>
+              <li>Sat - sun : <span>10:00 - 17:00</span></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="./asset/icons8-call-male-96.png"
+            alt=""
+            class="card-image"
+          />
+          <h5 class="card-head5">Emegency Cases</h5>
+          <h3 class="card-head3">1-800-700-6200</h3>
+          <div class="card-details">
+            <p>
+              Get ALl time support for emergency.We have introduced the
+              principle of family medicine.Get Conneted with us for any urgency.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!----------------------------------- Third Section --------------------------------------------->
+      <section class="services" id="services">
+        <div class="left-service">
+            <div class="left-service-image">
+              <img src="./asset/services-02.jpg" alt="service" >
+              <img src="./asset/services-03.jpg" alt="service" >
+            </div>
+            <img src="./asset/services-01.jpg" alt="service" >
+        </div>
+        
+        <div class="right-service">
+          <h1>Personal care & healthy living</h1>
+          <p>focus on self-care, good nutrition, exercise, and managing stress for overall well-being.</p>
+          <a href="./appointment.html" class="service-btn button-style">Services</a>
+        </div>
+      </section>
+
     </main>
 
     <script src="./JS/index.js"></script>
