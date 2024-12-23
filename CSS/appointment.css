@@ -69,12 +69,13 @@ input {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.9);
-  color: red;
+  background: #fff;
   font-size: 1rem;
+  color:#1C6194;
+  outline: none;
 }
 input::placeholder {
-  color: red;
+  color: #6F8BA4;
 }
 
 select {
@@ -83,8 +84,9 @@ select {
   border: none;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.9);
-  color: rgb(195, 0, 255);
+  color:#1C6194;
   font-size: 1rem;
+  outline: none;
 }
 
 .appointment-button {
