@@ -7,33 +7,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: myFont;
+  font-family: myFont, sans-serif;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  
   background-image: url('../asset/woman-working-as-doctor.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-haeder{
+.form-header {
   text-align: center;
   margin-bottom: 15px;
-  background:#1C6194;
+  background: #1c6194;
   color: #fff;
   padding: 12px;
-  /* border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px; */
   border-radius: 5px;
 }
+
 .form-container {
   padding: 50px;
   width: 100%;
@@ -54,7 +51,7 @@ body {
   margin-bottom: 15px;
 }
 
-.form-inner-group{
+.form-inner-group {
   width: 100%;
 }
 
@@ -64,29 +61,20 @@ label {
   margin-bottom: 5px;
   color: #fff;
 }
-input {
+
+input, select {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background: #fff;
   font-size: 1rem;
-  color:#1C6194;
+  color: #1c6194;
   outline: none;
-}
-input::placeholder {
-  color: #6F8BA4;
 }
 
-select {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.9);
-  color:#1C6194;
-  font-size: 1rem;
-  outline: none;
+input::placeholder {
+  color: #6f8ba4;
 }
 
 .appointment-button {
@@ -99,25 +87,58 @@ select {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
-  background:#f545ba;
+  background: #f545ba;
   margin-top: 10px;
-
   text-transform: capitalize;
 }
+
 .appointment-button:hover {
   background: #003d6b;
 }
 
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+    max-width: 90%;
+  }
 
+  .form-group {
+    flex-wrap: wrap;
+  }
 
+  .form-inner-group {
+    flex: 1 1 100%; /* Ensures full width */
+  }
+}
 
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
 
+  .form-header {
+    font-size: 1rem;
+    padding: 10px;
+  }
 
+  .form-container {
+    padding: 20px;
+  }
 
+  label {
+    font-size: 0.9rem;
+  }
 
+  input, select {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 
-
-
-
-
-
+  .appointment-button {
+    font-size: 0.9rem;
+    padding: 10px;
+    max-width: 100%; /* Full width for button on small screens */
+  }
+}
