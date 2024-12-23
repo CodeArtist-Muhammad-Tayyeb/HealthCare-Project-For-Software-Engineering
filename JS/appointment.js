@@ -6,6 +6,7 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
     const doctor = document.getElementById("doctor").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
+
   
     // Save appointment data in local storage
     const appointments = JSON.parse(localStorage.getItem("appointments")) || [];

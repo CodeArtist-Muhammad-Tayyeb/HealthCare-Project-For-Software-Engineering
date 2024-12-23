@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Appointment</title>
-  <link rel="stylesheet" href="./CSS/appointment.css">
-</head>
-<body>
-  <header class="header">
-    <h1>Book an Appointment</h1>
-  </header>
-  <main class="main-container">
-    <form id="appointmentForm">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/appointment.css" />
+    <link rel="icon" type="image/png" href="./asset/FormFavicon.png">
+  </head>
+  <body>
+    <main class="form-container">
+      <h2 class="form-haeder">Medical Healthcare Appoinment Form</h2>
+
+      <form action="#" method="post" >
+        <!-- First portion -->
+        <div class="form-group">
+          <div class="form-inner-group">
+            <label for="patientName">Patient Name</label>
+            <input
+              type="text"
+              name="patient_name"
+              placeholder="Patient Name"
+              required
+            />
+          </div>
+          <div class="form-inner-group">
+            <label for="date">Select Date</label>
+            <input type="date" name="date" placeholder="Select Date" required />
+          </div>
+        </div>
+        <!-- Second portion -->
+        <div class="form-group">
+          <div class="form-inner-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phone" placeholder="Phone Number" required />
+          </div>
+          <div class="form-inner-group">
+            <label for="doctors">Doctors</label>
+            <select name="doctors" required>
+              <option value="" disabled selected>Doctors</option>
+              <option value="cardiology">Cardiology</option>
+              <option value="neurology">Neurology</option>
+              <option value="orthopedics">Orthopedics</option>
+            </select>
+          </div>
+        </div>
+        <!-- 3rd portion -->
+        <div class="form-group">
+          <div class="form-inner-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-inner-group">
+            <label for="gender">Gender</label>
+            <select name="gender" required>
+              <option value="" disabled selected>Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="transgender">Transgender</option>
+            </select>
+          </div>
+        </div>
+        <!-- 4th portion -->
+        <div class="form-group">
+          <div class="form-inner-group">
+            <label for="symptoms">Symptoms</label>
+            <input
+            type="text"
+            name="symptoms"
+            placeholder="Example: Fever, Headache, Pain etc."
+            required
+          />
+          </div>
+          <div class="form-inner-group">
+            <label for="time">Time</label>
+            <input type="time" name="time" required />
+          </div>
+        </div>
+        <!-- Button -->
+        <button type="submit" class="appointment-button">Schedule an appointment</button>
+      </form>
+
+
+    </main>
+
       
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required>
-      
-      <label for="doctor">Select Doctor</label>
-      <select id="doctor" required>
-        <option value="Dr. Alice">Dr. Alice</option>
-        <option value="Dr. Bob">Dr. Bob</option>
-        <option value="Dr. Charlie">Dr. Charlie</option>
-      </select>
-      
-      <label for="date">Appointment Date</label>
-      <input type="date" id="date" required>
-      
-      <label for="time">Appointment Time</label>
-      <input type="time" id="time" required>
-      
-      <button type="submit" class="book-btn">Book Appointment</button>
-    </form>
-  </main>
-  <footer class="footer">
-    <p>&copy; 2024 Medical Healthcare</p>
-  </footer>
-  <script src="./JS/appointment.js"></script>
-</body>
+  </body>
 </html>
