@@ -14,3 +14,5 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     window.location.href = "dashboard.html"; // Redirect to the dashboard page
   });
   
+
+

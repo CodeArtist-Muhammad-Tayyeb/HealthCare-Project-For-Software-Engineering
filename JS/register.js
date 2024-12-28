@@ -22,3 +22,9 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
     window.location.href = "login.html";
   });
   
+
+
+
+
+
+

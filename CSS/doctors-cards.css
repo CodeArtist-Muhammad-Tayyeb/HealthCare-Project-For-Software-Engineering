@@ -22,7 +22,7 @@
   }
   
   /* Header Styles */
-  .header {
+  /* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,23 +96,31 @@
     transform: scale(1.05);
     color: #0f0f0f;
     background: #e7e7e7;
-  }
+  } */
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 80px;
+    gap: 30px;
 }
+
+
 .card {
     color: #fff;
     background: rgb(153, 0, 0);
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 380px;
     padding: 30px;
 }
+
+
 .card-image {
-    width: 100px;
+  width: 100%;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 50px;
     border-radius: 10px;
     background: red;
@@ -120,8 +128,10 @@
 
 .card-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
 }
 
 
