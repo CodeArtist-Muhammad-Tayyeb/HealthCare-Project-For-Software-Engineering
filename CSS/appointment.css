@@ -1,33 +1,14 @@
-/* @font-face {
-  font-family: myFont;
-  src: url(../asset/Poppins-Regular.otf);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: myFont, sans-serif;
-} */
-
-/* body {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('../asset/woman-working-as-doctor.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.forCenter{
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
+
 
 .form-header {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* text-align: center; */
   margin-bottom: 15px;
   background: #1c6194;
   color: #fff;
