@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/about.css">
+
+    <style>
+        .services-for-patient{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
       <!----------------------------------- Header --------------------------------------------->
@@ -25,7 +33,7 @@
           <ul class="nav-list">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="./doctors-cards.html">Doctors</a></li>
             <!-- <li class="list_btn"><a href="#">Contact</a></li>
   
@@ -43,7 +51,7 @@
 
     <!-- Contact Section -->
     <div class="about-head1">
-          <h1>About us</h1>
+          <h1>What we do</h1>
     </div>
     
 
@@ -51,90 +59,47 @@
     <!-- Personal Care Section -->
     <section class="personal-care-section">
         <div class="container">
-            <div class="text-content">
-                <h1>Personal care for your healthy living</h1>
+            <!-- <div class="text-content">
+                <h1>What we do</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur  quod laborum alias  consectetur  quod laborum alias  consectetur  
                     . Vitae dolorum, officia sit! Saepe ullam facere at, consequatur incidunt, quae esse, quis ut reprehenderit dignissimos, libero delectus.</p>
                 
-            </div>
-            <div class="services">
+            </div> -->
+            <div class="services-for-patient">
                 <div class="service">
-                    <img src="./asset/01.jpg" alt="Healthcare for Kids">
-                    <h3>Healthcare for Kids</h3>
+                    <img src="./asset/bg img.jpg" alt=" ">
+                    <h3>Personal Care</h3>
+                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium. </p>
+                </div>
+                <div class="service">
+                    <img src="./asset/01.jpg" alt="">
+                    <h3>Child care</h3>
+                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+                </div>
+                <div class="service">
+                    <img src="./asset/woman-working-as-doctor.jpg" alt="">
+                    <h3>CT scan</h3>
+                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
+                </div>
+                <div class="service">
+                    <img src="./asset/services-02.jpg" alt="Qualified Doctors">
+                    <h3>Joint replacement</h3>
+                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
+                </div>
+                <div class="service">
+                    <img src="./asset/services-03.jpg" alt="Healthcare for Kids">
+                    <h3>Examination & Diagnosis</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium. </p>
                 </div>
                 <div class="service">
                     <img src="./asset/01.jpg" alt="Medical Counseling">
-                    <h3>Medical Counseling</h3>
+                    <h3>Alzheimer's disease</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
-                </div>
-                <div class="service">
-                    <img src="./asset/01.jpg" alt="Modern Equipments">
-                    <h3>Modern Equipments</h3>
-                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
-                </div>
-                <div class="service">
-                    <img src="./asset/01.jpg" alt="Qualified Doctors">
-                    <h3>Qualified Doctors</h3>
-                    <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="specialists-section">
-        <h3 class="specialists-title">Meet Our Specialist</h3>
-        <p class="specialists-description">
-            Today's users expect effortless experiences. Don't let essential people and processes stay stuck in the past. Speed it up, skip the hassles.
-        </p>
-        <div class="specialists-grid">
-            <div class="specialist-card">
-                <img src="./asset/doc-2.jpg" alt="John Marshal">
-                <h3>John Marshal</h3>
-                <p>Internist, Emergency Physician</p>
-            </div>
-            <div class="specialist-card">
-                <img src="./asset/doc-2.jpg" alt="Marshal Root">
-                <h3>Marshal Root</h3>
-                <p>Surgeon, Cardiologist</p>
-            </div>
-            <div class="specialist-card">
-                <img src="./asset/doc-2.jpg" alt="Siamon John">
-                <h3>Siamon John</h3>
-                <p>Internist, General Practitioner</p>
-            </div>
-            <div class="specialist-card">
-                <img src="./asset/doc-2.jpg" alt="Rishat Ahmed">
-                <h3>Rishat Ahmed</h3>
-                <p>Orthopedic Surgeon</p>
-            </div>
-        </div>
-    </div>
-<section class="testimonial-section">
-    <div class="testimonial-container">
-        <div class="testimonial-wrapper">
-            <div class="testimonial-image">
-                <img src="./asset/doc-6.jpg" alt="Doctors Team">
-            </div>
-            <div class="testimonial-content">
-                <h2>What they say about us</h2>
-                <div class="testimonial">
-                    <h4 id="testimonial-title">Modern Service!</h4>
-                    <p class="author" id="testimonial-author">Kolis Mullar</p>
-                    <p class="testimonial-text" id="testimonial-text">
-                        They provide great service facility consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
-                    </p>
-                </div>
-                <div class="testimonial-indicators">
-                    <span class="indicator active" data-title="Modern Service!" data-author="Kolis Mullar" data-text="They provide great service facility consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod."></span>
-                    <span class="indicator" data-title="Exceptional Care!" data-author="John Doe" data-text="The care I received was beyond my expectations. The staff is knowledgeable and truly professional. Their modern equipment made the whole experience seamless and comforting."></span>
-                    <span class="indicator" data-title="Highly Recommended!" data-author="Sarah Connor" data-text="Amazing services! The team provided exceptional care and attention. I would highly recommend this to anyone seeking medical help."></span>
-                    <span class="indicator" data-title="Professional Team!" data-author="David Smith" data-text="Their professionalism and expertise are unmatched. From the moment I entered the facility, I felt I was in safe hands. Great job!"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+    
 
 
   <!-- Footer Section -->
