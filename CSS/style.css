@@ -994,6 +994,7 @@ iframe{
   flex-direction: column;
   cursor: pointer;
   z-index: 10;
+  list-style: none;
 }
 
 .hamburger .line {
@@ -1020,6 +1021,7 @@ iframe{
   
   .nav-list.show {
     display: flex;
+    list-style: none;
   }
 
   .hamburger {
