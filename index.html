@@ -12,31 +12,40 @@
   </head>
   <body>
     <!----------------------------------- Header --------------------------------------------->
-    <header class="header">
-      <div class="header-container">
-        <img
-          src="./asset/logo of Healthcare.png"
-          alt="Healthcare Logo"
-          class="logo"
-        />
-        <h1 class="title">Medical Healthcare</h1>
-      </div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./doctors-cards.html">Doctors</a></li>
-          <!-- <li class="list_btn"><a href="#">Contact</a></li>
+<header class="header">
+  <div class="header-container">
+    <a href="./index.html"><img
+      src="./asset/logo of Healthcare.png"
+      alt="Healthcare Logo"
+      class="logo"
+    /></a>
+    <h1 class="title">Medical Healthcare</h1>
+  </div>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./doctors-cards.html">Doctors</a></li>
+      <a class="list_btn button-style" href="#contact" >Contact</a>
+    </ul>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776; <!-- This is the hamburger icon (three bars) -->
+ 
+  
+      <ul id="menu" style="display: none;">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./doctors-cards.html">Doctors</a></li>
+        <li><a class="list_btn button-style" href="./index.html">Contact</a></li>
+    </ul>
+    
+  
+  </nav>
+</header>
 
-           <select class="select-dropdown" >
-            <option value="">Join as a Doctor</option>
-            <option value="">Join as a Patient</option>
-          </select> -->
-        </ul>
-        <a class="list_btn button-style" href="#contact">Contact</a>
-      </nav>
-    </header>
 
     <main>
       <!----------------------------------- First Section --------------------------------------------->
@@ -138,7 +147,7 @@
             focus on self-care, good nutrition, exercise, and managing stress
             for overall well-being.
           </p>
-          <a href="./appointment.html" class="service-btn button-style"
+          <a href="./services.html" class="service-btn button-style"
             >Services</a
           >
         </div>

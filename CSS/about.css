@@ -223,3 +223,148 @@
 .indicator.active {
     background: #083e8c;
 }
+
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .about-head1 {
+        font-size: 18px; /* Adjust font size for mobile */
+        padding-top: 40px; /* Reduce padding */
+    }
+
+    .personal-care-section {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .text-content {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 0;
+        align-items: center; /* Center text */
+    }
+
+    .text-content h1 {
+        font-size: 2rem; /* Smaller heading size */
+        text-align: center; /* Center align heading */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .text-content p {
+        margin-right: 0;
+        margin-bottom: 20px; /* Adjust margin */
+        max-width: 90%; /* Allow text to take more space */
+    }
+
+    .services {
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .service {
+        flex: 0 0 100%; /* Ensure services take full width */
+        margin-bottom: 20px; /* Add spacing between services */
+    }
+
+    .service h4 {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .service p {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+}
+
+/* Tablets and small screens (481px to 768px) */
+@media (max-width: 768px) {
+    .about-head1 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .personal-care-section {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .text-content {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 0;
+        align-items: center; /* Center text */
+    }
+
+    .text-content h1 {
+        font-size: 2.2rem; /* Adjust heading size */
+        text-align: center;
+        margin-bottom: 25px; /* Adjust margin */
+    }
+
+    .text-content p {
+        max-width: 90%; /* Increase text width */
+        margin-right: 0;
+    }
+
+    .services {
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .service {
+        flex: 0 0 100%; /* Full width for each service */
+        margin-bottom: 20px; /* Add space between services */
+    }
+
+    .service h4 {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    .service p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}
+
+/* Medium screens (769px to 1024px) */
+@media (max-width: 1024px) {
+    .about-head1 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .personal-care-section {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+
+    .text-content {
+        flex-direction: column; /* Stack content vertically */
+        padding-left: 0;
+        align-items: center; /* Center text */
+    }
+
+    .text-content h1 {
+        font-size: 2.3rem; /* Slightly larger heading */
+        text-align: center;
+        margin-bottom: 30px; /* Adjust margin */
+    }
+
+    .text-content p {
+        max-width: 85%; /* Adjust text width */
+    }
+
+    .services {
+        flex-direction: row;
+        justify-content: space-between; /* Spread out services */
+    }
+
+    .service {
+        flex: 1;
+        margin-bottom: 20px; /* Add spacing between services */
+    }
+
+    .service h4 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+
+    .service p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
+
+
+
+

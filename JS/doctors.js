@@ -96,3 +96,20 @@ function createCard({ image, title, description, moreLink, speclization }) {
     cardContainer.appendChild(card);
   });
   
+  // Get the hamburger and nav elements
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    
+    // Toggle the visibility of the menu when the hamburger icon is clicked
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block"; // Show the menu
+    } else {
+        menu.style.display = "none"; // Hide the menu
+    }
+}
+
+function navigate(event, section) {
+    const menu = document.getElementById("menu");
+    menu.style.display = "none"; // Hide the menu after the link is clicked
+}
+

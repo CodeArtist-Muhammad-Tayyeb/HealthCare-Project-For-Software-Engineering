@@ -16,11 +16,26 @@
             grid-template-columns: auto auto auto;
             gap: 20px;
         }
+        @media (max-width: 768px) {
+    .services-for-patient {
+        grid-template-columns: 1fr 1fr; /* Display services in 2 columns */
+    }
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .services-for-patient {
+        grid-template-columns: 1fr; /* Stack services in a single column */
+        gap: 15px; /* Adjust gap for mobile */
+    }
+}
     </style>
 </head>
 <body>
       <!----------------------------------- Header --------------------------------------------->
-      <header class="header">
+     
+    <!----------------------------------- Header --------------------------------------------->
+    <header class="header">
         <div class="header-container">
           <img
             src="./asset/logo of Healthcare.png"
@@ -33,21 +48,27 @@
           <ul class="nav-list">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="./services.html">Services</a></li>
             <li><a href="./doctors-cards.html">Doctors</a></li>
-            <!-- <li class="list_btn"><a href="#">Contact</a></li>
-  
-             <select class="select-dropdown" >
-              <option value="">Join as a Doctor</option>
-              <option value="">Join as a Patient</option>
-            </select> -->
+            <a class="list_btn button-style" href="./index.html">Contact</a>
           </ul>
-          <a class="list_btn button-style" href="./index.html">Contact</a>
+          <!-- Hamburger Icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- This is the hamburger icon (three bars) -->
+        </div>
+        
+        <ul id="menu" style="display: none;">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./doctors-cards.html">Doctors</a></li>
+            <li><a class="list_btn button-style" href="./index.html">Contact</a></li>
+        </ul>
+        
+        
         </nav>
       </header>
-
-
-
+      
 
     <!-- Contact Section -->
     <div class="about-head1">
@@ -67,22 +88,22 @@
             </div> -->
             <div class="services-for-patient">
                 <div class="service">
-                    <img src="./asset/bg img.jpg" alt=" ">
+                    <img src="./asset/personal care" alt=" ">
                     <h3>Personal Care</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium. </p>
                 </div>
                 <div class="service">
-                    <img src="./asset/01.jpg" alt="">
+                    <img src="./asset/childcare.jpg" alt="">
                     <h3>Child care</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
                 </div>
                 <div class="service">
-                    <img src="./asset/woman-working-as-doctor.jpg" alt="">
+                    <img src="./asset/CT scab.jpeg" alt="">
                     <h3>CT scan</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
                 </div>
                 <div class="service">
-                    <img src="./asset/services-02.jpg" alt="Qualified Doctors">
+                    <img src="./asset/Joint replacement.jpeg" alt="Qualified Doctors">
                     <h3>Joint replacement</h3>
                     <p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium.</p>
                 </div>
