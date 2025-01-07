@@ -62,3 +62,8 @@ function navigate(event, section) {
     const menu = document.getElementById("menu");
     menu.style.display = "none"; // Hide the menu after the link is clicked
 }
+
+
+function submitting(){
+  alert('Response Successfully submitted');
+}
